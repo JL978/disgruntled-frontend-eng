@@ -1,0 +1,59 @@
+.rectangle {
+    width: 375px;
+    height: 812px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #000;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .island {
+    /* Set the initial width to 30% of the parent element's width and the height to 30 pixels */
+    width: 30%;
+    height: 30px;
+    background-color: #000000;
+
+    /* Round the left and right corners of the pill */
+    border-radius: 15px;
+
+    /* Position the pill in the top middle of the parent element */
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* Add a transition */
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+     display: flex;
+     justify-content: space-between;
+
+     align-items: center;
+  }
+
+  /* On hover, expand the island to 90% of the parent element's width and 100 pixels in height, and add a bouncy animation */
+  .island:hover {
+    width: 90%;
+    height: 130px;
+  }
+
+  .image {
+  height: 80%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+
+  /* Make the image a circle */
+  border-radius: 50%;
+  margin-left: 3px;
+}
+
+  .sound-wave {
+    width: 50%;
+    height: 100%;
+    background-color: #FFFFFF;
+  }
+

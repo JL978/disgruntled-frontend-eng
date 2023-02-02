@@ -1,0 +1,201 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+  height: 100vh; 
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone {
+  width: 300px;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.island {
+  width: 50%;
+  height: 30px;
+  background-color: #141414;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4px 5px;
+  transition: all .3s ease;
+}
+
+.island:hover {
+  width: 99%;
+  height: 120px;
+  border-radius: 25px;
+  align-items: flex-start;
+  padding: 15px 10px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-auto-flow: row;
+  gap: 10px;
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  max-height: 22px;
+}
+
+.info h2 {
+  font-size: 0.7rem;
+}
+
+.info h3 {
+  font-size: 0.6rem;
+  font-weight: normal;
+  color: rgb(174, 174, 174);
+}
+
+.info > .text {
+  display: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+.island:hover .info {
+  max-height: 44px;
+}
+
+.island:hover .info > .text {
+  display: block;
+  animation: fadein 1s;
+}
+
+.album-cover {
+  overflow: hidden;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  max-height: 22px;
+  border-radius: 11px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+}
+
+.island:hover .album-cover {
+  width: 40px;
+  height: 40px;
+  max-height: 40px;
+}
+
+.album-cover > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.player {
+  display: none;
+}
+
+.island:hover .player {
+  grid-column: 1 / -1;
+  font-size: 0.6rem;
+  color:rgb(174, 174, 174);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+      animation: fadein 1s;
+}
+
+.progress {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(107, 107, 107);
+  border-radius: 100px;
+  margin-top: 2px;
+}
+
+.progress-bar {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 100px;
+}
+
+.bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+
+.loader {
+  width: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1px;
+  transition: all 0.3s ease;
+}
+
+.island:hover .loader {
+  height: 16px;
+}
+
+.loader > .bar {
+  background: #1DB954;
+  height: 2px;
+  width: 2px;
+  animation: sound 0ms -800ms linear infinite alternate;
+}
+
+@keyframes sound {
+  0% {
+    height: 2px;
+    opacity: .35;
+  }
+  100% {
+    height: 16px;
+    opacity: 1;
+  }
+}
+ 
+.bar:nth-child(1)  { animation-duration: 474ms; }
+.bar:nth-child(2)  { animation-duration: 433ms; }
+.bar:nth-child(3)  { animation-duration: 407ms; }
+.bar:nth-child(4)  { animation-duration: 458ms; }
+.bar:nth-child(5)  { animation-duration: 400ms; }
+.bar:nth-child(6)  { animation-duration: 427ms; }
+.bar:nth-child(7)  { animation-duration: 441ms; }
+.bar:nth-child(8)  { animation-duration: 419ms; }
+.bar:nth-child(9)  { animation-duration: 487ms; }
+.bar:nth-child(10) { animation-duration: 442ms; }
