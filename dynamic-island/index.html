@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://sdk.scdn.co/spotify-player.js"></script>
+  <script src="./index.js" defer></script>
 </head>
+
 <body>
+  <button id="login">
+    Login
+  </button>
   <div class="phone">
     <div class="island">
       <div class="info">
         <div class="album-cover">
-          <img aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67616d00004851af52c228c9619ff6298b08cd" data-testid="cover-art-image" alt="" class="mMx2LUixlnN_Fu45JpFB cover-art-image Yn2Ei5QZn19gria6LjZj">
+          <img class="img" aria-hidden="false" draggable="false" loading="eager" src="" alt="">
         </div>
         <div class="text">
-          <h2>Feel Is Still</h2>
-          <h3>Portugal, The Man</h3>
+          <h2 class="track-title">-</h2>
+          <h3 class="track-author">-</h3>
         </div>
       </div>
-      <div class="loader">
-        <div class="bar"></div>
-        <div class="bar"></div>
+      <div class="loader paused">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
@@ -34,37 +39,35 @@
       <div class="player">
         <div class="bar">
           <div class="time">
-            1:22
+            -
           </div>
           <div class="progress">
             <div class="progress-bar"></div>
           </div>
           <div class="time-left">
-            -1:20
+            -
           </div>
         </div>
         <div class="controls">
-          <div class="previous">
+          <button class="prev">
             <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M15 1V13L5 7L15 1Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-              <path d="M1 13V1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15 1V13L5 7L15 1Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+              <path d="M1 13V1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
-          </div>
-          <div class="play">
-            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7 1V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M1 1V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <div class="next">
+          </button>
+          <button class="play"></button>
+          <button class="next">
             <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 13V1L11 7L1 13Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-              <path d="M15 1V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1 13V1L11 7L1 13Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+              <path d="M15 1V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
-          </div>
+          </button>
         </div>
       </div>
     </div>
-  </div> 
+  </div>
 </body>
+
 </html>
