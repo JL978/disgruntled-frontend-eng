@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #161616;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  /* gradient bg */
+  background: rgb(47, 47, 47);
+  background: linear-gradient(180deg, rgba(47, 47, 47) 0%, rgba(0, 0, 0, 1) 89%);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+  width: 500px;
+  position: relative;
+  border: white 1px solid;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+}
+
+.header .title,
+.header .percent {
+  font-weight: bold;
+}
+
+.header .total {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.years>button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: background 0.2s ease-in-out;
+}
+
+.years>button.selected {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  font-weight: bold;
+  text-decoration-thickness: 2px;
+}
+
+.chart {
+  height: 200px;
+  width: 100%;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  transition: all 0.5s ease-in-out;
+}

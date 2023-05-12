@@ -1,4 +1,4 @@
-const access_token = "BQAOs1p2ZvyDTDPHna29pSQMiQUC9rTnK-4TlDEFx8s3TbLX4S9gTXwGmnPDWcs6oEZgoBjCqtI3WLHZYGYa8qT_mx761F5COvGNJO7eoj-l2Scu_ic9T-D22AG6XVxD6sw_xK3L6jaBFfT0kfGzHsaCaPwqe7dnS1lILH5n1GTY13b73tPohjXMMklfZ9YYXc5cdUfplrY_57sZfCOGSGHI"
+const access_token = "BQBkdVz4FSCdXq5UC6rNJHB_EBLW6R-opI98FTJ6eHCEmwsDHP2uihth7gfi-dDyt0oZ_DccoqoF_UkqXgYHBB5-D_PtprN4yy7BFOECWS7qvMSZog_K424lHyw-VR4HMBsBPk1G-kiJ94cKAWhAcUXhJRxy-TUxlMWXB28oGT9-eXxXrjEGwxHBPWfJHzIM0y2qVqZyEfrmN-q5s0-iOSrr"
 
 const play_button = document.querySelector('.play');
 const next_button = document.querySelector('.next');
